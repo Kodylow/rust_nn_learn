@@ -76,11 +76,9 @@ impl NeuralNet {
         // Create a uniform distribution between -1.0 and 1.0 for initializing weights
         let between = Uniform::from(-1.0..1.0);
 
-        // Create a random number generator
-        let mut rng = rand::thread_rng();
-
         // Generate a vector of random weights. The size of the vector is determined by the number of neurons
         // in the current layer (`self.layers[l]`) and the number of neurons in the previous layer (`self.layers[l - 1]`).
+        let mut rng = rand::thread_rng();
         let weight_array: Vec<f32> = (0..self.layers[l] * self.layers[l - 1])
             .map(|_| between.sample(&mut rng))
             .collect();
