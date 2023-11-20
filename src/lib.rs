@@ -31,8 +31,8 @@ pub fn array_from_dataframe(df: &DataFrame) -> Array2<f32> {
 ///
 /// # Fields
 ///
-/// * `layers` - A vector of usize where each element represents the number of neurons in a layer.
-/// * `learning_rate` - A float that represents the learning rate of the neural network.
+/// * `layers` - A vector of usize where each element represents the number of neurons in a layer, normally `n`
+/// * `learning_rate` - A float that represents the learning rate of the neural network, normally `h`
 struct NeuralNet {
     pub layers: Vec<usize>,
     pub learning_rate: f32,
