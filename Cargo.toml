@@ -8,5 +8,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.75"
 ndarray = { version = "0.15.6", features = ["serde"] }
+num-integer = "0.1.45"
 polars = { version = "0.35.4", features = ["lazy", "ndarray"] }
 rand = "0.8.5"
+serde_json = "1.0.108"

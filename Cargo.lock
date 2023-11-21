@@ -1041,8 +1041,10 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "ndarray",
+ "num-integer",
  "polars",
  "rand",
+ "serde_json",
 ]
 
 [[package]]
